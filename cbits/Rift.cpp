@@ -7,7 +7,6 @@
 // ========== ==================== ==========================================
 // 2013/04/22 Geekmaster           First release version.
 
-#include "Rift.h"
 #include "OVR.h"
 using namespace OVR;
 
