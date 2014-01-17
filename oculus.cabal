@@ -2,7 +2,7 @@
 -- documentation, see http://haskell.org/cabal/users-guide/
 
 name:                oculus
-version:             0.1.0.0
+version:             0.1.0.1
 synopsis:            Oculus Rift ffi providing head tracking data
 description:         Bindings to the oculus rift sdk head tracking. Requires installation of the OculusSdk, currently only supported for linux installs.
 		     You're going to need to either install the sdk under the default include and ld search path, or you can point cabal to your local oculusSdk install
@@ -38,6 +38,7 @@ cabal-version:       >=1.8
 library
   Hs-source-dirs:      src
   c-sources:           cbits/Rift.cpp
+  include-dirs:	       cbits
   extra-libraries:     ovr, udev, pthread, GL, X11, Xinerama, stdc++
   extensions:          ForeignFunctionInterface
   exposed-modules:     Rift
